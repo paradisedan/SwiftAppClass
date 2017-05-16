@@ -16,17 +16,14 @@ class ViewController: UIViewController {
     @IBAction func Button1(_ sender: AnyObject) {
         print(text1.text!)
         print(text2.text!)
+        TheLabel.text = "Answer: \(Double(text1.text!)! + Double(text2.text!)!)"
             }
     
-   
     @IBOutlet weak var text1: UITextField!
-    
-    
     @IBOutlet weak var text2: UITextField!
-    
-    
-    
-    
+
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
